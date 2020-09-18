@@ -1,5 +1,9 @@
 const express = require('express');
 const app     = express();
+const bodyParser = require('body-parser');
+
+//to be used before crud operations handlers
+app.use(bodyParser.urlencoded({ extended: true}));
 
 app.listen(3000, function() {
     console.log('Listening on 3000');
