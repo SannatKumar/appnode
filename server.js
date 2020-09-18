@@ -17,6 +17,6 @@ app.get('/', (req, res) => {
 })
 
 app.post('/quotes', (req, res) =>{
-    console.log('helloooooooooooooooo');
+    console.log(req.body);
 });
 
