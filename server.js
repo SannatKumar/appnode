@@ -1,3 +1,6 @@
-// Test Display
+const express = require('express');
+const app     = express();
 
-console.log("May Node be With you");
+app.listen(3000, function() {
+    console.log('Listening on 3000');
+})
