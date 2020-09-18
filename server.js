@@ -9,6 +9,6 @@ app.listen(3000, function() {
 //endpoint is the path and callback is a function that takes two object request(req) and response(res) as an arguments.
 
 app.get('/', (req, res) => {
-    res.send("Hello World");
+    res.sendFile(__dirname + '/index.html');
 })
 
